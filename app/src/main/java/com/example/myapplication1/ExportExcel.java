@@ -66,8 +66,8 @@ public class ExportExcel extends AppCompatActivity {
         ContentValues contentValues2 = getContentValues("phil", "男", 19);
 
         //往SQLite数据库中插入两条数据。
-        //sqLiteDatabase.insert(MySQLiteOpenHelper.TABLE_NAME, null, contentValues1);
-        //sqLiteDatabase.insert(MySQLiteOpenHelper.TABLE_NAME, null, contentValues2);
+        sqLiteDatabase.insert(MySQLiteOpenHelper.TABLE_NAME, null, contentValues1);
+        sqLiteDatabase.insert(MySQLiteOpenHelper.TABLE_NAME, null, contentValues2);
         sqLiteDatabase.close();
 
 
